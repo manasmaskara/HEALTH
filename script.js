@@ -1,6 +1,4 @@
 
-import { initializeApp } from "firebase/app";
-
 const firebaseConfig = {
   apiKey: "AIzaSyDKEYDVyX2KiCN1j8EjtM9ikf5UiucPBFs",
   authDomain: "health-818c4.firebaseapp.com",
