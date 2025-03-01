@@ -60,3 +60,4 @@ window.onload = function() {
     document.getElementById("unhealthy").addEventListener("click", () => updatePoints(-50));
     document.getElementById("healthy").addEventListener("click", () => updatePoints(20));
 console.log("script loaded");
+}
