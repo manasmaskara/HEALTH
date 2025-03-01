@@ -1,0 +1,92 @@
+/* Aesthetic UI Design */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #8D6C47, #EAC696);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background Icons */
+body::before {
+    content: "";
+    background: url('background-food-icons.png') no-repeat center center/cover;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Main Container */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Points Display */
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Unhealthy Button */
+#unhealthy {
+    background: rgba(220, 38, 38, 0.8);
+    color: white;
+}
+
+#unhealthy:hover {
+    background: rgba(220, 38, 38, 1);
+    transform: scale(1.05);
+}
+
+/* Healthy Button */
+#healthy {
+    background: rgba(34, 197, 94, 0.8);
+    color: white;
+}
+
+#healthy:hover {
+    background: rgba(34, 197, 94, 1);
+    transform: scale(1.05);
+}

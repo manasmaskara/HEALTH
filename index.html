@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Score</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Font for Aesthetic Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Points: <span id="points">Loading...</span></h1>
+        <div class="button-container">
+            <button id="unhealthy">
+                <img src="unhealthy.png" alt="Unhealthy"> Unhealthy (-50)
+            </button>
+            <button id="healthy">
+                <img src="healthy.png" alt="Healthy"> Healthy (+20)
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
